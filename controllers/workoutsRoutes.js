@@ -1,9 +1,9 @@
 const router = require('express').Router();
-const db = require('../models');
-const {Workout} = require('../../models');
+// const db = require('../models');
+// const {Workout} = require('../../models');
 
 router.get ('/', async (req, res) => {
-    const workoutData = awati Workout.aggregate([
+    const workoutData = await Workout.aggregate([
         {
             $addFields: {
                 totalDuration: {
